@@ -64,8 +64,3 @@ class Test(object):
         print("Answers made.")
 
 
-t = Test(40, 20, "kramertest")
-t.generate()
-t.generate_ans()
-remove_test("test.txt")
-
