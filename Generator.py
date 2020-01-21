@@ -2,6 +2,9 @@ import random
 from random import randint
 import os
 
+msg = "Hello"
+
+print(msg)
 
 def remove_test(file_name):
     if os.path.exists("{}".format(file_name)):
@@ -62,10 +65,12 @@ class Test(object):
             i += 1
 
         print("Answers made.")
+    
+    def close_test(self):
+        self.test.close()
 
-
-t = Test(40, 20, "kramertest")
+t = Test(10,10,"Tristan")
 t.generate()
 t.generate_ans()
-remove_test("test.txt")
-
+t.close_test()
+remove_test("Tristan.txt")
